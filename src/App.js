@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Routes from './routes'
 
 function App() {
+    function Filmes(){
+      window.location = '/filmes?page=1'
+    }
+    function Series(){
+      window.location = '/series?page=1'
+    }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Main">
+    <header>
+        Bem Vindo ao Mundo dos Filmes e Series
+    </header>
+      <div id="box_options">
+       <div className="movies_series" onClick={()=>{Filmes()}}>Filmes</div>
+       <div className="movies_series" onClick={()=>{Series()}}>Series</div>
+      </div>
+      <Routes />
     </div>
   );
 }

@@ -36,7 +36,7 @@ import { Link } from "react-router-dom";
                 { movies.map( movie =>(
                     <Link className="link" to={`/select/filmes/${movie.id}`}>
                         <div className="movies" Key={movie.id}>
-                        <img src={movie.poster_path} alt="Img"/>
+                            <img src={movie.poster_path} alt="Img"/>
                             <strong>{movie.title}</strong>
                             <span>{movie.overview}</span>
                         </div>

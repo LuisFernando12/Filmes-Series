@@ -4,10 +4,10 @@ import Routes from './routes'
 
 function App() {
     function Filmes(){
-      window.location = '/filmes?page=1'
+      window.location = '/filmes'
     }
     function Series(){
-      window.location = '/series?page=1'
+      window.location = '/series'
     }
   return (
     <div className="Main">

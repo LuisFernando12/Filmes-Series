@@ -1,11 +1,13 @@
 .content{
     width: 100%;
-    min-height: 400px;
-    max-height: 500px;
+    min-height: 100%;
+    height: auto;
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
+
 .content img{
     width: 350px;
     height: 300px;
@@ -38,8 +40,8 @@
     height: 150px;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-    
+    /* flex-wrap: wrap; */
+    overflow: hidden; 
 }
 .box_personagem{
     width: 170px;
@@ -61,4 +63,43 @@
     width: 100px;
     height: 100px;
     margin-left: 10px;
+}
+@media(max-width: 650px){
+    .content{
+        display: block;
+        margin: 0 auto;
+        height: auto;
+    }
+    .content img{
+        width: 350px;
+        height: 300px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .box_text{
+        width: 100%;
+        display: block;
+        margin-left: 15%;
+    }
+    .box_text p{
+        width: 100%;
+        text-align: justify;
+        /* position: absolute; */
+    }
+    .personagem{
+        display: block;
+        height: 270px;
+        width: 100%;
+        overflow: hidden;
+    }
+    .box_personagem{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+    .box_personagem img{
+        width: 30px;
+        height: 30px;
+    }
+
 }

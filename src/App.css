@@ -1,3 +1,7 @@
+a, *{
+  margin: 0;
+  padding: 0;
+}
 .Main {
  min-height: 100%;
  width: 100%;
@@ -14,6 +18,7 @@
   text-align: center;
   line-height: 50px;
   font-size: 20px;
+  word-break: break-all;
 }
 #box_options{
   display: flex;
@@ -33,5 +38,10 @@ strong{
   text-align: center;
   margin-top: 20px;
   font-size: 40px;
+}
+@media(max-width: 650px){
+  header{
+    font-size: 15px;
+  }
 }
 

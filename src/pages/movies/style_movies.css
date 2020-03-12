@@ -85,8 +85,6 @@
 
     .box{
         width: auto;
-        /* display: grid;
-        grid-template-columns:  1fr; */
         display: block;
     }
     .movies{

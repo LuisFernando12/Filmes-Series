@@ -78,12 +78,27 @@
     text-decoration: none ;
     color: #000;
 }
-@media(max-width: 650px){
-
+@media(max-width: 1372px){
     .box{
-        display:block;
+        margin-top: 20px;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 650px) and ( min-width: 360px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .box{
+        margin-top: 20px;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
     .series{
+        width: 100%;
         margin-top: 5%;    
         box-shadow: 0 0px 0 2px gray;
        
@@ -97,6 +112,8 @@
         min-height: 300px;
         height: auto;
         display: flex;
-        align-items: inherit;
+        align-items: center;
+        padding: 0; 
+        margin: 0;
     }
 }

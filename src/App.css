@@ -1,4 +1,4 @@
-a, *{
+a, body, *{
   margin: 0;
   padding: 0;
 }
@@ -41,7 +41,11 @@ strong{
 }
 @media(max-width: 650px){
   header{
+    width: 100%;
     font-size: 15px;
+  }
+  #box_options{
+    width: 100%;
   }
 }
 

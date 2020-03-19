@@ -43,10 +43,9 @@
     box-shadow: 0 0px 0 3px gray;
 }
 .movies{ 
-    /* min-height: 500px;
+    min-height: 200px;
     height: auto;
-    min-width: 350px;
-    max-width: 400px; */
+    width: 400px;
     background-color:aliceblue;
     display: flex;
     flex-direction: column;
@@ -96,8 +95,8 @@
         background-color: aqua;
     }
     .movies{ 
-        height: 350px;
-        width: 252px;
+        height: 350px!important;
+        width: 252px!important;
         background-color:aliceblue;
         display: flex;
         flex-direction: column;

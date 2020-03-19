@@ -91,8 +91,8 @@
     
     .box{
         width: 100%;
+        display: flex;
         flex-direction: column;
-        background-color: aqua;
     }
     .movies{ 
         height: 350px!important;
@@ -126,9 +126,6 @@
     .movies strong{
         text-align: center;
         font-size: 18px;
-    }
-    .link{
-        width: 100%;
     }
     .container{
         width: 100%;

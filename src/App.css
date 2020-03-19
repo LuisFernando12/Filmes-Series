@@ -39,13 +39,20 @@ strong{
   margin-top: 20px;
   font-size: 40px;
 }
-@media(max-width: 650px){
-  header{
+@media(max-width: 650px) and ( min-width: 360px){
+  .Main header{
     width: 100%;
     font-size: 15px;
   }
   #box_options{
     width: 100%;
   }
+.movies_series{
+  border-left:none ;
+}
+.movies_series:last-child{
+  border-right: none;
+}
+
 }
 
